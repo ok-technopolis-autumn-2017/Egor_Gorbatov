@@ -1,58 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
+    
     <head>
-        <meta charset="UTF-8">
-        <title:>
-            <h1 class="NameOfApp"> TODOS </h1>
-        </title:>
+
+        <meta charset="utf-8">
+        <title>TODOS</title>
+
     </head>
+    
     <body>
-        <div class="MainBlock">
-            <div class="TextInputBlock">
-                <input type="button" value="↓">
-                <input value="What needs to be done?" type="Text"  class="TextInputForm" >
+
+        <div class="todos-header">
+
+            <h1 class="todos-header_title">todos</h1>
+
+        </div>
+        
+        <div class="todos-wrap">
+
+            <div class="todos-add">
+
+                <button class="todo-add_select-all" aria-label="Check all items as done"></button>
+                <input class="todo-add_put-item" placeholder="What needs to be done?" aria-label="add new item"/>
 
             </div>
-            <div class="TodoList">
-                <div class="Todo1">
-                    <table>
-                        <tr>
-                            <td> 
-                                <input type=checkbox> 
-                                HTMl
-                                <input type="button" value="✕"
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                                <input type=checkbox> 
-                                CSS
-                                <input type="button" value="✕">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td> 
-                                <input type=checkbox> 
-                                JS
-                                <input type="button" value="✕">
-                            </td>
-                        </tr>
-                    </table>
+
+            <div class="todos-list">
+
+                <div class="todos-list-item">
+
+                    <input class="todos-list-item_check" type="checkbox" aria-label="set as done">
+                    <textarea class="todos-list-item_name">HTML</textarea>
+                    <button class="todos-list-item_delete" aria-label="delete item"></button>
+
                 </div>
+
+                <div class="todos-list-item __ready">
+
+                    <input class="todos-list-item_check-ready" type="checkbox" aria-label="set as done">
+                    <textarea class="todos-list-item_name">CSS</textarea>
+                    <button class="todos-list-item_delete" aria-label="delete item"></button>
+
+                </div>
+
+                <div class="todos-list-item">
+
+                    <input class="todos-list-item_check" type="checkbox" checked=checked aria-label="set as done">
+                    <textarea class="todos-list-item_name">JS</textarea>
+                    <button class="todos-list-item_delete" aria-label="delete item"></button>
+
+                </div>
+
+                <div class="todos-list-item">
+
+                    <input class="todos-list-item_check" type="checkbox" aria-label="set as done">
+                    <textarea class="todos-list-item_name">JS tools</textarea>
+                    <button class="todos-list-item_delete" aria-label="delete item"></button>
+
+                </div>
+
             </div>
-            <div class="StatusBar">
-                <div class="CounterOfTodos">
-                    3 items left
+
+            <div class="todos-actionbar">
+
+                <div class="todos-actionbar_counter" aria-label="counter of undone todos">3 items left</div>
+
+                <div class="todos-actionbar_filter">
+
+                    <button class="todos-actionbar_filter-all" aria-label="show all todos">All</button>
+                    <button class="todos-actionbar_filter-active" aria-label="show active todos">Active</button>
+                    <button class="todos-actionbar_filter-ready" aria-label="show ready todos">Completed</button>
+
                 </div>
-                <div class="ListChanger">
-                    <input type="button" value="All">
-                    <input type="button" value="Active">
-                    <input type="button" value="Completed">
-                </div>
-                <div class="ActionClearCompleted">
-                    <input type="button" value="Clear completed">
-                </div>
+
+                <button class="todos-actionbar_delete-ready" aria-label="delete ready todos">Clear completed</button>
+
             </div>
+
         </div>
     </body>
 </html>
