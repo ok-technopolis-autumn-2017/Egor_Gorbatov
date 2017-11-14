@@ -92,3 +92,11 @@
 .__active{
 	border: 1px solid rgb(235,223,223);
 }
+
+.__one-element .todos-actionbar_counter{
+    visibility: hidden;
+}
+
+.__one-element .todos-actionbar_delete-ready{
+    visibility: hidden;
+}
